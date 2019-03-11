@@ -5,15 +5,13 @@
 			<div>
 				<button class="btn btn-sm btn-primary composer-discard" data-action="discard" tabindex="-1"><i class="fa fa-times"></i></button>
 				<button class="btn btn-sm btn-primary composer-minimize" data-action="minimize" tabindex="-1"><i class="fa fa-minus"></i></button>
+				<button class="btn btn-sm btn-primary composer-submit btn_align_right" data-action="post" tabindex="-1">[[topic:composer.submit]] <i class="fa fa-chevron-right"></i></button>
 			</div>
 			<!-- IF isTopic -->
 			<div class="category-name-container">
 				<span class="category-name"></span> <i class="fa fa-sort"></i>
 			</div>
 			<!-- ENDIF isTopic -->
-			<div>
-				<button class="btn btn-sm btn-primary composer-submit" data-action="post" tabindex="-1"><i class="fa fa-chevron-right"></i></button>
-			</div>
 		</nav>
 		<div class="title-container row">
 			<!-- IF showHandleInput -->
