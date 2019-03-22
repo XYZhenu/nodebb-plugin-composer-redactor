@@ -192,11 +192,11 @@
 		videoContainerClass: 'video-container',
 
 		toolbar: true,
-		toolbarFixed: true,
+		toolbarFixed: false,
 		toolbarFixedTarget: document,
 		toolbarFixedTopOffset: 0, // pixels
 		toolbarExternal: false, // ID selector
-		toolbarOverflow: false,
+		toolbarOverflow: true,
 
 		air: false,
 		airWidth: false,
