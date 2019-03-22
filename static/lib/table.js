@@ -16,6 +16,19 @@
 					"delete-column": "Delete column",
 					"delete-row": "Delete row",
 					"delete-table": "Delete table"
+				},
+				zh: {
+					"table": "表格",
+					"insert-table": "插入表格",
+					"insert-row-above": "在上方插入行",
+					"insert-row-below": "在下方插入行",
+					"insert-column-left": "在左边插入列",
+					"insert-column-right": "在右边插入列",
+					"add-head": "增加表头",
+					"delete-head": "删除表头",
+					"delete-column": "删除列",
+					"delete-row": "删除行",
+					"delete-table": "删除表格"
 				}
 			},
 			init: function()

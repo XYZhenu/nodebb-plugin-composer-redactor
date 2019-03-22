@@ -9,6 +9,10 @@
 				en: {
 					"video": "Video",
 					"video-html-code": "Video Embed Code or Youtube/Vimeo Link"
+				},
+				zh: {
+					"video": "视频",
+					"video-html-code": "视频iFrame分享代码"
 				}
 			},
 			getTemplate: function()

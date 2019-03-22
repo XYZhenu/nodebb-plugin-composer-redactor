@@ -204,7 +204,7 @@
 		formatting: ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
 		formattingAdd: false,
 
-		buttons: ['format', 'bold', 'italic', 'deleted', 'lists', 'image', 'file', 'link', 'horizontalrule'], // + 'horizontalrule', 'underline', 'ol', 'ul', 'indent', 'outdent'
+		buttons: ['format', 'bold', 'italic', 'deleted', 'lists', 'image', 'file', 'link'], // + 'horizontalrule', 'underline', 'ol', 'ul', 'indent', 'outdent'
         buttonsTextLabeled: false,
 		buttonsHide: [],
 		buttonsHideOnMobile: [],
@@ -302,6 +302,63 @@
 				"center": "Center",
 
 				"accessibility-help-label": "Rich text editor"
+			},
+			zh: {
+
+				"format": "字体",
+				"image": "图像",
+				"file": "文件",
+				"link": "链接",
+				"bold": "粗体",
+				"italic": "斜体",
+				"deleted": "删除线",
+				"underline": "下划线",
+				"bold-abbr": "B",
+				"italic-abbr": "I",
+				"deleted-abbr": "S",
+				"underline-abbr": "U",
+				"lists": "列表",
+				"link-insert": "插入链接",
+				"link-edit": "编辑链接",
+				"link-in-new-tab": "在新标签页打开连接",
+				"unlink": "删除链接",
+				"cancel": "取消",
+				"close": "关闭",
+				"insert": "插入",
+				"save": "保存",
+				"delete": "删除",
+				"text": "文字",
+				"edit": "编辑",
+				"title": "标题",
+				"paragraph": "段落",
+				"quote": "引用",
+				"code": "代码",
+				"heading1": "标题 1",
+				"heading2": "标题 2",
+				"heading3": "标题 3",
+				"heading4": "标题 4",
+				"heading5": "标题 5",
+				"heading6": "标题 6",
+				"filename": "名字",
+				"optional": "可选",
+				"unorderedlist": "无序列表",
+				"orderedlist": "有序列表",
+				"outdent": "减少缩进",
+				"indent": "缩进",
+				"horizontalrule": "分割线",
+				"upload-label": "把文件拖到这里或者 ",
+				"caption": "说明",
+
+				"bulletslist": "项目符号",
+				"numberslist": "编号",
+
+				"image-position": "图像位置",
+				"none": "无",
+				"left": "左",
+				"right": "右",
+				"center": "居中",
+
+				"accessibility-help-label": "富文本编辑器"
 			}
 		},
 
@@ -517,7 +574,11 @@
 				this.$element.data(),
 				options
 			);
-
+			var langlocal = navigator.language||navigator.userLanguage;
+			langlocal = langlocal.substr(0, 2);
+			if(langlocal == 'zh') {
+				this.opts.lang = 'zh';
+			}
 			this.opts = $.extend({}, this.opts, settings);
 
 		},
